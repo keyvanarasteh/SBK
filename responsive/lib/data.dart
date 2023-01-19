@@ -48,7 +48,7 @@ class MyVideoCard extends StatelessWidget {
           width: currentWidth,
           color: Colors.black,
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(1,15,1,25),
+            padding: const EdgeInsets.fromLTRB(1, 15, 1, 25),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -58,7 +58,8 @@ class MyVideoCard extends StatelessWidget {
                   color: Colors.black,
                   //padding: EdgeInsets.only(left: 10, top: 15, bottom: 30),
                   child: CircleAvatar(
-                    foregroundImage: AssetImage("assets/circleavatarexample.jpg"),
+                    foregroundImage:
+                        AssetImage("assets/circleavatarexample.jpg"),
                     radius: currentWidth / 22,
                   ),
                 ),
@@ -78,7 +79,7 @@ class MyVideoCard extends StatelessWidget {
                       width: currentWidth * 0.70,
                       color: Colors.black,
                       child: Text(
-                        "Why The iPad Doesn't Have A Calculator aaaaaaaa",
+                        "Why The iPad Doesn't Have A Calculator",
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                         style: TextStyle(
@@ -89,7 +90,9 @@ class MyVideoCard extends StatelessWidget {
                       ),
                     ),
 
-                    SizedBox(height: 5,),
+                    SizedBox(
+                      height: 5,
+                    ),
 
                     // USER + VIEW + DATE IN A ROW PART
 
@@ -99,9 +102,9 @@ class MyVideoCard extends StatelessWidget {
                       color: Colors.black,
                       child: Text(
                         "Apple Explained" +
-                            "  *  " +
+                            "  ·  " +
                             "6 Mn görüntülenme" +
-                            "  *  " +
+                            "  ·  " +
                             "1 yıl önce",
                         style: TextStyle(
                             fontSize: 14,
@@ -113,7 +116,7 @@ class MyVideoCard extends StatelessWidget {
                 ),
 
                 SizedBox(
-                  width: currentWidth/20,
+                  width: currentWidth / 20,
                 ),
 
                 //ICON
@@ -170,7 +173,7 @@ class MyVideoCard extends StatelessWidget {
           width: currentWidth,
           color: Colors.black,
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(1,15,1,25),
+            padding: const EdgeInsets.fromLTRB(1, 15, 1, 25),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -212,7 +215,9 @@ class MyVideoCard extends StatelessWidget {
                       ),
                     ),
 
-                    SizedBox(height: 5,),
+                    SizedBox(
+                      height: 5,
+                    ),
 
                     // USER + VIEW + DATE IN A ROW PART
 
@@ -222,9 +227,9 @@ class MyVideoCard extends StatelessWidget {
                       color: Colors.black,
                       child: Text(
                         "TRK Technology" +
-                            "  *  " +
+                            "  ·  " +
                             "100 görüntülenme" +
-                            "  *  " +
+                            "  ·  " +
                             "11 saat önce",
                         style: TextStyle(
                             fontSize: 14,
@@ -256,4 +261,3 @@ class MyVideoCard extends StatelessWidget {
     );
   }
 }
-

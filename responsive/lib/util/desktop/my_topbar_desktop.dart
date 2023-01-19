@@ -101,52 +101,52 @@ class MyTopBarDesktop extends StatelessWidget with PreferredSizeWidget {
               ],
             ),
             SizedBox(
-              width: currentWidth / 4.517647058823529,
+              width: currentWidth / 4.27,
             ),
-            Row(
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(currentWidth / 96)),
-                  child: IconButton(
-                      splashRadius: currentWidth / 96,
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.more_vert,
-                        size: currentWidth / 96,
-                      )),
-                ),
-                SizedBox(
-                  width: currentWidth / 128,
-                ),
-                Container(
-                  padding: EdgeInsets.fromLTRB(
-                      currentWidth / 320,
-                      currentWidth / 320,
-                      currentWidth / 160,
-                      currentWidth / 320),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(currentWidth / 96),
-                      border: Border.all(width: 1, color: Colors.grey)),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.person_rounded,
-                        color: Colors.blue,
-                        size: currentWidth / 91.42857142857143,
-                      ),
-                      Text(
-                        "Oturum aç",
-                        style: TextStyle(
-                            color: Colors.blue,
-                            fontWeight: FontWeight.bold,
-                            fontSize: currentWidth / 137.1428571428571),
-                      ),
-                    ],
+            Container(
+              color: Colors.black,
+              child: Row(
+                children: [
+                  Container(
+                    height: currentWidth / 48,
+                    width: currentWidth / 48,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(currentWidth / 96)),
+                    child: IconButton(
+                        padding: EdgeInsets.only(bottom: 1),
+                        splashRadius: currentWidth / 96,
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.more_vert,
+                          size: currentWidth / 96,
+                        )),
                   ),
-                ),
-              ],
+                  Container(
+                    height: currentWidth / 54.8571,
+                    width: currentWidth / 17.45,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(currentWidth / 96),
+                        border: Border.all(width: 1, color: Colors.grey)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.person_rounded,
+                          color: Colors.blue,
+                          size: currentWidth / 91.42857142857143,
+                        ),
+                        Text(
+                          "Oturum aç",
+                          style: TextStyle(
+                              color: Colors.blue,
+                              fontWeight: FontWeight.bold,
+                              fontSize: currentWidth / 137.1428571428571),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
         ),

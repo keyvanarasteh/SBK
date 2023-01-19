@@ -33,7 +33,7 @@ class MyShortsBarTablet extends StatelessWidget {
                 onPressed: () {},
                 icon: Icon(Icons.close_sharp, size: currentWidth / 30),
                 padding:
-                    EdgeInsets.only(left: currentWidth - (currentWidth / 5.6)),
+                    EdgeInsets.only(left: currentWidth - (currentWidth / 5.5)),
               ),
             ],
           ),

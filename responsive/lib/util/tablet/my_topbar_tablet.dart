@@ -7,31 +7,28 @@ class MyTopBarTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var currentWidth = MediaQuery.of(context).size.width;
-    var currentHeight = MediaQuery.of(context).size.height;
     return AppBar(
       backgroundColor: Colors.black,
-      leadingWidth: 125,
+      leadingWidth: currentWidth / 4.8,
       leading: SvgPicture.asset('assets/youtube_white.svg'),
       actions: [
-        Text(
-          currentWidth.toString() +
-              "\n" +
-              currentHeight.toString() +
-              "\n" +
-              "TABLET",
-          style: TextStyle(color: Colors.white),
-        ),
         IconButton(
-          padding: EdgeInsets.only(right: 5, left: 25, top: 5),
+          padding: EdgeInsets.only(
+              right: currentWidth / 120,
+              left: currentWidth / 24,
+              top: currentWidth / 120),
           icon: Icon(
             Icons.search_rounded,
-            size: 30,
+            size: currentWidth / 30,
           ),
           onPressed: () {},
         ),
         IconButton(
-          padding: EdgeInsets.only(right: 15, left: 25, top: 5),
-          iconSize: 35,
+          padding: EdgeInsets.only(
+              right: currentWidth / 40,
+              left: currentWidth / 24,
+              top: currentWidth / 120),
+          iconSize: currentWidth / 17.15,
           icon: CircleAvatar(
               foregroundImage: AssetImage("assets/circleavatarexample.jpg")),
           onPressed: () {},

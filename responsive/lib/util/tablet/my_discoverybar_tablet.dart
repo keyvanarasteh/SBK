@@ -23,25 +23,32 @@ class MyDiscoveryBarTablet extends StatelessWidget {
                 thickness: 1,
                 indent: 0,
                 endIndent: 0,
-                height: 10,
+                height: currentWidth / 60,
               ),
               SizedBox(
-                height: 53,
+                height: currentWidth / 12.32,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(8, 8, 8, 11),
+                      padding: EdgeInsets.fromLTRB(
+                          currentWidth / 75,
+                          currentWidth / 80,
+                          currentWidth / 75,
+                          currentWidth / 80),
                       child: Container(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(Icons.explore_outlined),
+                            Icon(
+                              Icons.explore_outlined,
+                              size: currentWidth / 30,
+                            ),
                             Center(
                                 child: Text(
                               ' Keşfet ',
                               style: TextStyle(
-                                  fontSize: 17,
+                                  fontSize: currentWidth / 35.29,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w500),
                             )),
@@ -50,135 +57,135 @@ class MyDiscoveryBarTablet extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: Color(0xff434343),
                             borderRadius: BorderRadius.all(Radius.circular(8))),
-                        height: 30,
-                        width: 100,
+                        height: currentWidth / 20,
+                        width: currentWidth / 6,
                       ),
                     ),
                     VerticalDivider(
                       thickness: 1,
-                      indent: 5,
-                      endIndent: 5,
-                      width: 10,
+                      indent: currentWidth / 120,
+                      endIndent: currentWidth / 120,
+                      width: currentWidth / 60,
                       color: Color(0xff434343),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(currentWidth / 75),
                       child: Container(
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.all(Radius.circular(8))),
-                        height: 30,
-                        width: 60,
+                        height: currentWidth / 20,
+                        width: currentWidth / 10,
                         child: Center(
                             child: Text(
                           'Tümü',
                           style: TextStyle(
-                              fontSize: 17,
+                              fontSize: currentWidth / 35.29,
                               color: Colors.black,
                               fontWeight: FontWeight.normal),
                         )),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(currentWidth / 75),
                       child: Container(
                         decoration: BoxDecoration(
                             color: Color(0xff434343),
                             borderRadius: BorderRadius.all(Radius.circular(8))),
-                        height: 30,
-                        width: 60,
+                        height: currentWidth / 20,
+                        width: currentWidth / 10,
                         child: Center(
                             child: Text(
                           'Oyun',
                           style: TextStyle(
-                              fontSize: 17,
+                              fontSize: currentWidth / 35.29,
                               color: Colors.white,
                               fontWeight: FontWeight.w500),
                         )),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(currentWidth / 75),
                       child: Container(
                         decoration: BoxDecoration(
                             color: Color(0xff434343),
                             borderRadius: BorderRadius.all(Radius.circular(8))),
-                        height: 30,
-                        width: 60,
+                        height: currentWidth / 20,
+                        width: currentWidth / 10,
                         child: Center(
                             child: Text(
                           'Müzik',
                           style: TextStyle(
-                              fontSize: 17,
+                              fontSize: currentWidth / 35.29,
                               color: Colors.white,
                               fontWeight: FontWeight.w500),
                         )),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(currentWidth / 75),
                       child: Container(
                         decoration: BoxDecoration(
                             color: Color(0xff434343),
                             borderRadius: BorderRadius.all(Radius.circular(8))),
-                        height: 30,
-                        width: 60,
+                        height: currentWidth / 20,
+                        width: currentWidth / 10,
                         child: Center(
                             child: Text(
                           "Mix'im",
                           style: TextStyle(
-                              fontSize: 17,
+                              fontSize: currentWidth / 35.29,
                               color: Colors.white,
                               fontWeight: FontWeight.w500),
                         )),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(currentWidth / 75),
                       child: Container(
                         decoration: BoxDecoration(
                             color: Color(0xff434343),
                             borderRadius: BorderRadius.all(Radius.circular(8))),
-                        height: 30,
+                        height: currentWidth / 20,
                         child: Center(
                             child: Text(
                           ' Haberler ',
                           style: TextStyle(
-                              fontSize: 17,
+                              fontSize: currentWidth / 35.29,
                               color: Colors.white,
                               fontWeight: FontWeight.w500),
                         )),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(currentWidth / 75),
                       child: Container(
                         decoration: BoxDecoration(
                             color: Color(0xff434343),
                             borderRadius: BorderRadius.all(Radius.circular(8))),
-                        height: 30,
+                        height: currentWidth / 20,
                         child: Center(
                             child: Text(
                           ' Yemek pişirme programları ',
                           style: TextStyle(
-                              fontSize: 17,
+                              fontSize: currentWidth / 35.29,
                               color: Colors.white,
                               fontWeight: FontWeight.w500),
                         )),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(currentWidth / 75),
                       child: Container(
                         decoration: BoxDecoration(
                             color: Color(0xff434343),
                             borderRadius: BorderRadius.all(Radius.circular(8))),
-                        height: 30,
+                        height: currentWidth / 20,
                         child: Center(
                             child: Text(
                           ' Turistik yerler ',
                           style: TextStyle(
-                              fontSize: 17,
+                              fontSize: currentWidth / 35.29,
                               color: Colors.white,
                               fontWeight: FontWeight.w500),
                         )),
@@ -192,7 +199,7 @@ class MyDiscoveryBarTablet extends StatelessWidget {
                 thickness: 2,
                 indent: 0,
                 endIndent: 0,
-                height: 10,
+                height: currentWidth / 60,
               ),
             ],
           ),
